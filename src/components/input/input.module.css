@@ -1,0 +1,135 @@
+
+.formField::placeholder {
+  color: #CBD1DC;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: inherit;
+}
+.formField:focus {
+  outline: none;
+  border-color: #275EFE;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: inherit;
+}
+
+.formGroup {
+  position: relative;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: inherit;
+}
+.formGroup > span, .form-group .form-field {
+  white-space: nowrap;
+  display: block;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: inherit;
+}
+.formGroup > span:not(:first-child):not(:last-child), .form-group .form-field:not(:first-child):not(:last-child) {
+  border-radius: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: inherit;
+}
+.formGroup > span:first-child, .form-group .form-field:first-child {
+  border-radius: 6px 0 0 6px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: inherit;
+}
+.formGroup > span:last-child, .form-group .form-field:last-child {
+  border-radius: 0 6px 6px 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: inherit;
+}
+.formGroup > span:not(:first-child), .form-group .form-field:not(:first-child) {
+  margin-left: -1px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: inherit;
+}
+.formGroup .formField {
+  position: relative;
+  z-index: 1;
+  flex: 1 1 auto;
+  width: 1%;
+  margin-top: 0;
+  margin-bottom: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: inherit;
+}
+.formGroup > span {
+  text-align: center;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 25px;
+  color: #99A3BA;
+  background: #EEF4FF;
+  border: 1px solid #CDD9ED;
+  transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: inherit;
+}
+.formGroup:focus-within > span {
+  color: #fff;
+  background: #678EFE;
+  border-color: #275EFE;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: inherit;
+}
+.formGroup {
+  max-width: 360px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: inherit;
+}
+.formGroup:not(:last-child) {
+  margin-bottom: 32px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: inherit;
+}
+.formField {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  line-height: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  border-radius: 6px;
+  -webkit-appearance: none;
+  color: #99A3BA;
+  border: 1px solid #CDD9ED;
+  background: #fff;
+  transition: border 0.3s ease;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+.formField {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  line-height: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  border-radius: 6px;
+  -webkit-appearance: none;
+  color: #99A3BA;
+  border: 1px solid #CDD9ED;
+  background: #fff;
+  transition: border 0.3s ease;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  border-left: none;
+  border-radius: 0px;
+  border-radius: 0px 6px 6px 0px;
+}

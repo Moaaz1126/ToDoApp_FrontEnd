@@ -1,0 +1,7 @@
+.main {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, #9234f5, #372496);
+  padding-top: 20px;
+  box-sizing: border-box;
+}

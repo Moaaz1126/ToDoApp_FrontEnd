@@ -1,0 +1,39 @@
+.img {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.main {
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.top {
+  font-size: 23px;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  padding-top: 60px;
+  padding-bottom: 25px;
+  width: 650px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+.top h1 {
+  color: white;
+}
+.buttom {
+  width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .top {
+    width: 100%;
+  }
+  .buttom {
+    width: 100%;
+  }
+}

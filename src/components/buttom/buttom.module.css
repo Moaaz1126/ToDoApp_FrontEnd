@@ -1,0 +1,18 @@
+.button {
+  width: 150px;
+  padding: 13px;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(to right, #7651d6, #a25bf7);
+  color: white;
+  font-size: bold;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  opacity: 80%;
+  transition: 0.3s;
+}
+.button:hover {
+  cursor: pointer;
+  opacity: 100%;
+}

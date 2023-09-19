@@ -1,0 +1,21 @@
+.imgCon {
+  width: 60%;
+  /* background: #7150d1; */
+  box-shadow: 7px 0px 20px #372496;
+  background: linear-gradient(to right top, #7150d1, #a15af6);
+}
+.imgCon img {
+  margin-left: 50%;
+  /* margin-top: 50%; */
+  transform: translateX(-55%);
+}
+
+@media screen and (max-width: 800px) {
+  .imgCon {
+    width: 100%;
+  }
+  .imgCon img {
+    width: 300px;
+    height: 300px;
+  }
+}

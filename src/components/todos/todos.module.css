@@ -1,0 +1,42 @@
+.con {
+  background-color: white;
+  /* width: 35%; */
+  /* width: 55%; */
+  margin: 10px;
+  border-radius: 3px;
+  transition: 0.2s;
+}
+.header {
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.header p {
+  opacity: 35%;
+}
+.p {
+  transition: 0.1s;
+}
+.p:hover {
+  opacity: 100%;
+  cursor: pointer;
+}
+.header div span {
+  margin-right: 15px;
+  margin-left: 15px;
+  opacity: 35%;
+  transition: 0.2s;
+}
+.header div span:hover {
+  cursor: pointer;
+  opacity: 100%;
+}
+@media only screen and (max-width: 600px) {
+  .con {
+    margin: 3px;
+  }
+  .header div span {
+    margin-right: 6px;
+    margin-left: 6px;
+  }
+}

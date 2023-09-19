@@ -1,0 +1,21 @@
+.mainTodo {
+  width: calc(100% 40px);
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.192);
+  align-items: center;
+  /* padding: 15px; */
+  display: flex;
+  position: relative;
+  padding: 20px;
+  padding-left: 35px;
+}
+.i {
+  position: absolute;
+  right: 35px;
+  
+}
+.mainTodo p {
+  /* display: inline; */
+  margin-left: 20px;
+  font-weight: 600;
+  color: #515151;
+}
