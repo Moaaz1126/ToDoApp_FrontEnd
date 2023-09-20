@@ -11,7 +11,7 @@ import BgLight from '../../assets/bgLight.jpg';
 import Image from 'next/image'
 
 export default function Home() {
-  const router = useRouter();
+  const Router = useRouter();
   axios.defaults.withCredentials = true;
 
   let id = null;
@@ -28,7 +28,7 @@ export default function Home() {
       }
     })
     .catch(function (error) {
-      router.push('/');
+      Router.push('/');
     });
   }
 

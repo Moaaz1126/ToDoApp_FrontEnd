@@ -10,7 +10,7 @@ type InputParams = {
 }
 
 function User(props: InputParams) {
-  const router = useRouter();
+  const Router = useRouter();
   axios.defaults.withCredentials = true;
 
   const handleClick = (e: any, type?: any) => {
@@ -21,7 +21,7 @@ function User(props: InputParams) {
       // console.log(response.data)
       if(response.status == 200) {
         // console.log(response)
-        router.push('/');
+        Router.push('/');
       }
     })
     .catch(function (error) {

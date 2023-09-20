@@ -17,7 +17,7 @@ type InputParams = {
   signLink: Url
 }
 function Form(props: InputParams) {
-  const router = useRouter();
+  const Router = useRouter();
 
   let usernameInp = document.querySelector('#username')
   let passwordInp = document.querySelector('#password')
@@ -61,7 +61,7 @@ function Form(props: InputParams) {
       }).then(async function (response) {
         let i = response.status == 200
         if(i) {
-          router.push('/');
+          Router.push('/');
         }
       }).catch(function (error) {
         // console.log(error)
@@ -107,7 +107,7 @@ function Form(props: InputParams) {
           let err = document.querySelector("#err") as any | undefined
           window.localStorage.setItem("id", response.data._id)
           err.style.display = "none"
-          router.push('/app/');
+          Router.push('/app/');
           
         }
       })

@@ -14,7 +14,7 @@ type InputParams = {
 }
 
 function taskForm(props: InputParams) {
-  const router = useRouter();
+  const Router = useRouter();
   axios.defaults.withCredentials = true;
 
   const handleSave = (input: any) => {
@@ -41,7 +41,7 @@ function taskForm(props: InputParams) {
       // console.log()
       if(response.status == 200) {
         // console.log(response)
-        router.push('/');
+        Router.push('/');
       }
     })
     .catch(function (error) {

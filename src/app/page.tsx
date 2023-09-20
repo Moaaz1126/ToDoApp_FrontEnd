@@ -6,7 +6,7 @@ import axios from 'axios';
 import { useRouter } from 'next/navigation';
 
 export default function Home() {
-  const router = useRouter();
+  const Router = useRouter();
 
   axios.defaults.withCredentials = true;
 
@@ -19,7 +19,7 @@ export default function Home() {
       if(response.status == 200) {
         // console.log("Token Found")
         window.localStorage.setItem("id", response.data._id)
-        router.push('/app/');
+        Router.push('/app/');
       }
     })
     .catch(function (error) {

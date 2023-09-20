@@ -3,7 +3,6 @@ import styles from './taskForm.module.css'
 import axios from 'axios';
 import { useRouter } from 'next/navigation';
 import Checkbox from '../checkbox/checkbox';
-import SwitchDev from '../darkSwitch/darkSwitch';
 
 type InputParams = {
   id: any,
@@ -11,7 +10,7 @@ type InputParams = {
 }
 
 function taskForm(props: InputParams) {
-  const router = useRouter();
+  const Router = useRouter();
   axios.defaults.withCredentials = true;
 
   const CheckBOXComponent = () => <Checkbox type={false} check={0} onClick={true} disabled={true}/>;
@@ -46,7 +45,7 @@ function taskForm(props: InputParams) {
     let body = document.querySelector("#body") as any | null
     // console.log("handle Add")
     input.value = ""
-    router.push('./');
+    Router.push('./');
   }
 
   useEffect(() => {
