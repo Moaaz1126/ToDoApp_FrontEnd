@@ -65,7 +65,7 @@ function Form(props: InputParams) {
         }
       }).catch(function (error) {
         // console.log(error)
-        if(error.response.status == 400) {
+        if(error.status == 400) {
           let err = document.querySelector("#err") as any | undefined
 
           err.style.display = "block"
@@ -113,7 +113,7 @@ function Form(props: InputParams) {
       })
       .catch(function (error) {
         // console.log(error)
-        if(error.response.status == 404) {
+        if(error.status == 404) {
 
           let err = document.querySelector("#err") as any | undefined
 

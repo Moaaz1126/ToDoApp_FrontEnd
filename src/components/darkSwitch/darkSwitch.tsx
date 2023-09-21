@@ -16,6 +16,7 @@ function SwitchDev() {
         let taskFormInp = document.querySelector("#FormInput") as any;
         taskForm.style.background = "#25273c"
         taskFormInp.style.background = "#25273c"
+        taskFormInp.style.color = "white"
       } catch (error) {
         
       }
@@ -32,6 +33,7 @@ function SwitchDev() {
         let taskFormInp = document.querySelector("#FormInput") as any;
         taskForm.style.background = "white"
         taskFormInp.style.background = "white"
+        taskFormInp.style.color = "black"
       } catch (error) {
         
       }
@@ -54,6 +56,7 @@ function SwitchDev() {
         let taskFormInp = document.querySelector("#FormInput") as any;
         taskForm.style.background = "#25273c"
         taskFormInp.style.background = "#25273c"
+        taskFormInp.style.color = "white"
       } catch (error) {
         
       }
@@ -66,8 +69,9 @@ function SwitchDev() {
         tasks.style.background = "white"
         let taskForm = document.querySelector("#TaskForm") as any;
         let taskFormInp = document.querySelector("#FormInput") as any;
-        taskForm.style.background = "#white"
-        taskFormInp.style.background = "#white"
+        taskForm.style.background = "white"
+        taskFormInp.style.background = "white"
+        taskFormInp.style.color = "black"
       } catch (error) {
         
       }

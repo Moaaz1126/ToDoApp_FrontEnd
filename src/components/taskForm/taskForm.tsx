@@ -15,7 +15,7 @@ function taskForm(props: InputParams) {
 
   const CheckBOXComponent = () => <Checkbox type={false} check={0} onClick={true} disabled={true}/>;
 
-  const handleSave = (input: any) => {
+  const HandleSave = (input: any) => {
     let date = new Date();
     let today = date.toLocaleDateString();
     // console.log({
@@ -33,7 +33,7 @@ function taskForm(props: InputParams) {
     .then(function (response) {
       // console.log(response.data)
       if(response.status == 200) {
-        handleAdd(response.data, input)
+        HandleAdd(response.data, input)
       }
     })
     .catch(function (error) {
@@ -41,7 +41,7 @@ function taskForm(props: InputParams) {
     });
   }
 
-  const handleAdd = (res: any, input?: any) => {
+  const HandleAdd = (res: any, input?: any) => {
     let body = document.querySelector("#body") as any | null
     // console.log("handle Add")
     input.value = ""
@@ -54,7 +54,7 @@ function taskForm(props: InputParams) {
       // If the user presses the "Enter" key on the keyboard
       if (event.key === "Enter") {
         // console.log("enter?")
-        handleSave(inp)
+        HandleSave(inp)
       }
     });
   }, [])

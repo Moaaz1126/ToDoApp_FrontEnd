@@ -81,7 +81,7 @@ function Todos(props: InputParams) {
     <Todo name={key[1].title} checked={key[1].checked} id={key[1]._id} num={i} />
   ))
   ele = Object.entries(dataval).map((key: any, i: any) => (
-    <Todo name={key[1].title} checked={key[1].checked} id={key[1]._id} num={i} />
+    <Todo name={key[1].title} checked={false} id={key[1]._id} num={i} />
   ))
 
   useEffect(() => {
