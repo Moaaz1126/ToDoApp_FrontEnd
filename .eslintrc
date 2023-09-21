@@ -1,6 +1,6 @@
 {
   "extends": "next",
   "rules": {
-    "padded-blocks": "off",
+    "padded-blocks": "off"
   }
 }
