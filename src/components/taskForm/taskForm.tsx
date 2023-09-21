@@ -9,7 +9,7 @@ type InputParams = {
   num: any
 }
 
-function taskForm(props: InputParams) {
+function TaskForm(props: InputParams) {
   const Router = useRouter();
   axios.defaults.withCredentials = true;
 
@@ -67,4 +67,4 @@ function taskForm(props: InputParams) {
   )
 }
 
-export default taskForm;
+export default TaskForm;
