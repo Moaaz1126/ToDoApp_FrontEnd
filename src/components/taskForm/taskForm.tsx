@@ -1,4 +1,4 @@
-import { InputHTMLAttributes, useEffect, useRef } from 'react';
+import {useEffect} from 'react';
 import styles from './taskForm.module.css'
 import axios from 'axios';
 import { useRouter } from 'next/navigation';
@@ -10,7 +10,7 @@ type InputParams = {
 }
 
 function TaskForm(props: InputParams) {
-  const Router = useRouter();
+  const router = useRouter();
   axios.defaults.withCredentials = true;
 
   const CheckBOXComponent = () => <Checkbox type={false} check={0} onClick={true} disabled={true}/>;
@@ -30,13 +30,13 @@ function TaskForm(props: InputParams) {
       date: today,
       user: props.id
     })
-    .then(function (response) {
+   .then(function (response) {
       // console.log(response.data)
       if(response.status == 200) {
         HandleAdd(response.data, input)
       }
     })
-    .catch(function (error) {
+   .catch(function (error) {
       // console.log(error)
     });
   }
@@ -45,7 +45,7 @@ function TaskForm(props: InputParams) {
     let body = document.querySelector("#body") as any | null
     // console.log("handle Add")
     input.value = ""
-    Router.push('./');
+    router.push('./');
   }
 
   useEffect(() => {
