@@ -45,7 +45,12 @@ export default function Home() {
     get()
   }, [])
 
-  let win = localStorage.getItem("id") as any
+  let win;
+  try {
+    win = window.localStorage.getItem("id") as any
+  } catch (error) {
+    
+  }
 
   return (
     <main className={styles.main}>

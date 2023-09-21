@@ -18,7 +18,11 @@ export default function Home() {
       // console.log(response.data)
       if(response.status == 200) {
         // console.log("Token Found")
-        window.localStorage.setItem("id", response.data._id)
+        try {
+          window.localStorage.setItem("id", response.data._id)
+        } catch (error) {
+          
+        }
         Router.push('/app/');
       }
     })

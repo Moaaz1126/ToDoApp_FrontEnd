@@ -105,7 +105,11 @@ function Form(props: InputParams) {
         // console.log(response)
         if(response.status == 200) {
           let err = document.querySelector("#err") as any | undefined
-          window.localStorage.setItem("id", response.data._id)
+          try {
+            window.localStorage.setItem("id", response.data._id)
+          } catch (error) {
+            
+          }
           err.style.display = "none"
           Router.push('/app/');
           
