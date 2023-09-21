@@ -8,8 +8,8 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons'
 
 type InputParams = {
   name: any,
-  checked: any,
-  id: any,
+  checked?: any,
+  id?: any,
   num: any
 }
 

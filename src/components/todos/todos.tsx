@@ -4,7 +4,7 @@ import axios from 'axios';
 import Todo from '../todo/todo';
 
 type InputParams = {
-  id: String
+  id?: String
 }
 
 function Todos(props: InputParams) {

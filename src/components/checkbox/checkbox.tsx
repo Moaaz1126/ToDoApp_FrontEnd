@@ -3,8 +3,8 @@ import styles from './checkbox.module.css'
 import axios from 'axios';
 
 type InputParams = {
-  type: any,
-  check: any,
+  type?: any,
+  check?: any,
   onClick?: any,
   disabled?: any,
   onChange?: any | null
