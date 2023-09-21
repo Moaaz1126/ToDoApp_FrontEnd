@@ -7,10 +7,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
 
 type InputParams = {
-  name: any,
+  name?: any,
   checked?: any,
   id?: any,
-  num: any
+  num?: any
 }
 
 function Todos(props: InputParams) {

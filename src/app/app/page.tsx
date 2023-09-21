@@ -45,7 +45,7 @@ export default function Home() {
     get()
   }, [])
 
-  let win = window.localStorage.getItem("id") as any
+  let win = localStorage.getItem("id") as any
 
   return (
     <main className={styles.main}>

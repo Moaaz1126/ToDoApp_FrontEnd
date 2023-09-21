@@ -2,6 +2,7 @@ import { InputHTMLAttributes, useEffect, useRef, useState } from 'react';
 import styles from './todos.module.css'
 import axios from 'axios';
 import Todo from '../todo/todo';
+import { randomUUID } from 'crypto';
 
 type InputParams = {
   id?: String
@@ -77,12 +78,17 @@ function Todos(props: InputParams) {
     });
   }
 
-  let ele = Object.entries(dataval).map((key: any, i: any) => (
-    <Todo name={key[1].title} checked={key[1].checked} id={key[1]._id} num={i} />
-  ))
-  ele = Object.entries(dataval).map((key: any, i: any) => (
-    <Todo name={key[1].title} checked={false} id={key[1]._id} num={i} />
-  ))
+  let ele;
+  try {
+    ele = Object.entries(dataval).map((key: any, i: any) => (
+      <Todo key={i} name={key[1].title} checked={key[1].checked} id={key[1]._id} num={i} />
+    ))
+  } catch (error) {
+    
+  }
+  // ele = Object.entries(dataval).map((key: any, i: any) => (
+  //   <Todo name={key[1].title} checked={false} id={key[1]._id} num={i} />
+  // ))
 
   useEffect(() => {
     getTodos()
