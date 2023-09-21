@@ -13,7 +13,7 @@ type InputParams = {
   num: any
 }
 
-function taskForm(props: InputParams) {
+function Todos(props: InputParams) {
   const Router = useRouter();
   axios.defaults.withCredentials = true;
 
@@ -64,4 +64,4 @@ function taskForm(props: InputParams) {
   )
 }
 
-export default taskForm;
+export default Todos;
