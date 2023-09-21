@@ -1,6 +1,4 @@
 {
-  "extends": "next/core-web-vitals",
-  "rules": {
-    "padded-blocks": "off",
-  }
+  "extends": "next/core-web-vitals"
+  
 }
